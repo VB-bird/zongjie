@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>631862020115结业报告</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Start your project here-->
+  <!-- start your project here -->
+  <!--Main Navigation-->
+  <header>
+
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; padding: 0px 200px;">
+    <h1 style="text-align: center;">《Web应用基础》课程结业报告</h1>
+    <h2>一：做的什么</h2>
+    <p>本人制作的静态网站主题为：辉煌灿烂的文学。旨在宣传传统文化，简要介绍诗词歌赋的目的。主要采用MDB框架结合老师课堂上教授的知识和例子开发而成。
+      大体可以分为5个部分:
+    </p>
+    <ol>
+      <li>顶部导航条
+        <ol>
+          <li>MDB：超链接指向MDB官网。</li>
+          <li>棋歌首页：超链接指向棋歌教学网。</li>
+          <li>古诗词网：超链接指向古诗词网。</li>
+          <li>明清小说网：超链接指向明清小说网。</li>
+          <li>结业报告：超链接指向结业报告页面。</li>
+          <li>网易云音乐外链播放器：播放一首背景音乐《少年游》-关大洲。</li>
+        </ol>
+      </li>
+      <li>全屏欢迎页面。
+        <ol>
+          <li>封面背景为视频，若加载失败会显示一张图片。</li>
+          <li>封面上显示文字和按钮。</li>
+        </ol>
+      </li>
+      <li>四个内容页
+        <br>按照“唐诗”“宋词”“元曲”“明清小说”分别利用不同的样式模板展现对应内容的代表人物和代表作品。
+      </li>
+      <li>页脚
+        <br>布置了一个有常规社交网站链接的页脚。
+      </li>
+      <li>侧边滚动监听插件
+        <p>实现了点击对应位置滚动到相应页面的功能。</p>
+      </li>
+    </ol>
+    <h2>二：开发过程</h2>
+    <p>鉴于自己对MDB相对于Angular框架更加了解，在仔细对比权衡后我还是决定选择采用MDB制作一个静态网站。全部开发建立在MDB资源文件中，按照导航栏、欢迎页面、内容页面、侧边滚动监听插件、页脚的顺序进行实现。</p>
+    <ol>
+      <li>
+        导航栏与欢迎页面<p>在MDB官网的Navigation中选择Full Page Intro with a fixed, transparent
+          Navbar样式，实现固定在页面上方、透明的、响应式的导航栏和全屏的欢迎页面。在网易云音乐网页版中获得外链播放器代码并添加至导航栏。</p>
+      </li>
+      <li>
+        内容页<p>在MDB官网的样式中挑选了不同分类不同表现形式的样式，并通过免费的图片素材网站搜集了合适的图片，展现各个阶段的代表人物和代表作品。</p>
+      </li>
+      <li>
+        侧边滚动监听插件<p>在MDB官网的样式中选择了在Dotted Scrollspy样式并设置和各个页面的标签id对应，添加其提供的JavaScript代码实现滚动监听。</p>
+      </li>
+      <li>
+        页脚<p>在MDB官网footer分类中选择了风格偏简约的Social buttons样式
+          最后添加合适大小的图片内容、修改页面布局、背景颜色等使整个页面协调一致。</p>
+      </li>
+    </ol>
+    <h2>遇到的问题</h2>
+    <ul>
+      <li>最初拷贝下来的导航栏中的链接只支持页内跳转。</li>
+      <li>图片大小难以控制，呈现出来的效果很差。</li>
+      <li>页面与页面之间有空白间隙。</li>
+      <li>滚动监听插件会被其他内容遮挡。</li>
+      <li>页面的右侧有一块多出来的区域，只有导航栏可以伸过去，造成一长条的空白区域。</li>
+      <li>托管网页至github网站上文件过大。</li>
+      <li>实现托管后的网页图片显示不全。</li>
+    </ul>
+    <h2>四：如何解决</h2>
+    <ul>
+      <li>尝试了许久没有找到原因后将其删除再重新自己添加了超链接内容。</li>
+      <li>找到相应的图片后利用windows自带的图片编辑器进行裁剪即可。</li>
+      <li>利用添加对齐、定位属性等将所有内容与其他的位置联系起来。</li>
+      <li>添加了整体的颜色背景，将间隙遮盖住了。</li>
+      <li>设置z-index：999将其置于最上层。</li>
+      <li>使用了github lfs技术传递大文件内容，比如视频。</li>
+      <li>页面图片显示不全的问题搜索再三最终依靠修改图片路径解决，将所有/img/*改成了img/*。</li>
+    </ul>
+    <h2>五：哪些未解决</h2>
+    <ul>
+      <li>
+        右侧的空白区域未解决，逐个删除类或样式、尝试修改css文件后未果。
+      </li>
+    </ul>
+    <h2>
+      六：总结
+    </h2>
+    <p>我在整个页面的实现过程中重新学习了HTML和CSS、JavaScript、MDB、angular框架等内容，并在自己的页面中尽量的应用相关的内容，不过碍于学习的不够深入、自身缺少网站设计经验和实践等问题，设计出来的网站在外观、内容方面仍有较大进步空间。前端设计发展至今已经变得功能强大且易于学习，不过碍于英文的界面和翻译的不准确性导致自身的学习不到位，对于整个MDB官网内各种各样的样式分类、模板等不够了，所以在使用的时候常常会遇到问题并且使用的方式显得不太灵活。虽然学习web开发的时间不长，但也算是在老师的教导下入了门，了解了前端开发的各个环节和常用的工具框架，在自己实践的过程中不断学习新知识，通过尝试、搜索等方法自己解决遇到的困难，真真实实地提升了自己的能力，我感觉收获很大。相信在后续的时间中我可以持续学习不断进步，增进自己的前端设计能力，并掌握制作出足够优秀的网页的能力。</p>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer>
+
+  </footer>
+  <!--Footer-->
+  <!-- end your project here -->
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+</body>
+
+</html>
